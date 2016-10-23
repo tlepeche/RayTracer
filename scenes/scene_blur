@@ -1,0 +1,58 @@
+{
+	scene:
+	{
+		options:
+		{
+			{blur : 5}
+		}
+	}
+	camera:
+	{
+		{pos: 0, 0, -10}
+		{look_at: 0, 0, 0}	
+	}
+	objects:
+	{
+		{
+			sphere:
+			{
+				{radius: 0.7}
+				{pos: 0, 0, -1}
+				{color: 1, 0.5, 0.1}
+				{
+					options:
+					{
+						{specular: 50}
+						{opacity: 1}
+					}
+				}
+			}
+		}
+		{
+			plane:
+			{
+				{pos : 0, 1, 0}
+				{normal: 0, 1.2, 0}
+				{color: 0.3, 0.3, 0.3}
+				{
+					options:
+					{
+						{specular: 30}
+						{reflection : 1}
+					}
+				}
+			}
+		}
+	}
+	light:
+	{
+		{
+			diffuse:
+			{
+				{pos: 0, 0, -5}
+				{color : 255, 255, 255}
+				{dir: 0, 0, 0}
+			}
+		}
+	}
+}

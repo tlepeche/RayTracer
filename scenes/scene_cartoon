@@ -1,0 +1,106 @@
+{
+	scene:
+	{
+		options:
+		{
+			{cartoon:n}
+		}
+	}
+	camera:
+	{
+		{pos: 0, 0, -10}
+		{look_at: 0, 0, 0}	
+	}
+	objects:
+	{
+		{
+			sphere:
+			{
+				{radius: 0.7}
+				{pos: 0, 0.3, 0}
+				{color: 0.8, 0.8, 0.4}
+				{
+					options:
+					{
+						{specular: 50}
+						{opacity: 1}
+					}
+				}
+			}
+		}
+		{
+			cylinder:
+			{
+				{radius: 0.5}
+				{pos : 0, 0.5, -2}
+				{dir: 0, 0, -1}
+				{length: 1}
+				{color: 0.5, 0.5, 1}
+				{
+					options:
+					{
+						{specular: 98}
+						{opacity:0.1}
+						{ref_index:1.55}
+						{is_closed: y}
+					}
+				}
+			}
+		}
+		{
+			plane:
+			{
+				{pos : 0, 0, 10}
+				{normal: 0, 0, 1.2}
+				{color: 0.1, 0.1, 0.1}
+				{
+					options:
+					{
+						{specular: 30}
+					}
+				}
+			}
+		}
+		{
+			plane:
+			{
+				{pos : 0, 1, 0}
+				{normal: 0, 1.2, 0}
+				{color: 0.3, 0.3, 0.3}
+				{
+					options:
+					{
+						{specular: 30}
+					}
+				}
+			}
+		}
+	}
+	light:
+	{
+#		{
+#			diffuse:
+#			{
+#				{pos: -5, 0, -5}
+#				{color : 255, 255, 255}
+#				{dir: 0, 0, 0}
+#			}
+#		}
+		{
+			diffuse:
+			{
+				{pos: 5, 0, -5}
+				{color : 255, 255, 255}
+				{dir: 0, 0, 0}
+			}
+		}
+#		{
+#			parallel:
+#			{
+#				{pos: -1, 1, 0}
+#				{color : 255, 255, 255}
+#				{dir: 0, 0, 0}
+#			}
+#		}
+	}
+}
